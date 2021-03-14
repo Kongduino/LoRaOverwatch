@@ -3,14 +3,14 @@ Begin Window Window1
    Backdrop        =   0
    BackgroundColor =   &cFFFFFF00
    Composite       =   False
-   DefaultLocation =   "0"
+   DefaultLocation =   0
    FullScreen      =   False
    HasBackgroundColor=   False
    HasCloseButton  =   True
    HasFullScreenButton=   False
    HasMaximizeButton=   True
    HasMinimizeButton=   True
-   Height          =   440
+   Height          =   620
    ImplicitInstance=   True
    MacProcID       =   0
    MaximumHeight   =   800
@@ -21,7 +21,7 @@ Begin Window Window1
    MinimumWidth    =   64
    Resizeable      =   True
    Title           =   "LoRa Overwatch"
-   Type            =   "0"
+   Type            =   0
    Visible         =   True
    Width           =   732
    Begin Label Label1
@@ -49,7 +49,7 @@ Begin Window Window1
       TabIndex        =   0
       TabPanelIndex   =   0
       TabStop         =   True
-      TextAlignment   =   "2"
+      TextAlignment   =   2
       TextColor       =   &c00000000
       Tooltip         =   ""
       Top             =   20
@@ -78,8 +78,8 @@ Begin Window Window1
       FontName        =   "System"
       FontSize        =   0.0
       FontUnit        =   0
-      GridLinesHorizontalStyle=   "0"
-      GridLinesVerticalStyle=   "0"
+      GridLinesHorizontalStyle=   0
+      GridLinesVerticalStyle=   0
       HasBorder       =   True
       HasHeader       =   False
       HasHorizontalScrollbar=   False
@@ -97,7 +97,7 @@ Begin Window Window1
       LockRight       =   False
       LockTop         =   True
       RequiresSelection=   False
-      RowSelectionType=   "0"
+      RowSelectionType=   0
       Scope           =   0
       TabIndex        =   1
       TabPanelIndex   =   0
@@ -136,7 +136,7 @@ Begin Window Window1
       TabIndex        =   2
       TabPanelIndex   =   0
       TabStop         =   True
-      TextAlignment   =   "2"
+      TextAlignment   =   2
       TextColor       =   &c00000000
       Tooltip         =   ""
       Top             =   202
@@ -165,8 +165,8 @@ Begin Window Window1
       FontName        =   "System"
       FontSize        =   0.0
       FontUnit        =   0
-      GridLinesHorizontalStyle=   "0"
-      GridLinesVerticalStyle=   "0"
+      GridLinesHorizontalStyle=   0
+      GridLinesVerticalStyle=   0
       HasBorder       =   True
       HasHeader       =   False
       HasHorizontalScrollbar=   False
@@ -184,7 +184,7 @@ Begin Window Window1
       LockRight       =   False
       LockTop         =   True
       RequiresSelection=   False
-      RowSelectionType=   "0"
+      RowSelectionType=   0
       Scope           =   0
       TabIndex        =   3
       TabPanelIndex   =   0
@@ -202,13 +202,13 @@ Begin Window Window1
       AllowAutoDeactivate=   True
       AllowFocus      =   True
       BackgroundColor =   &c00000000
-      BevelStyle      =   "0"
+      BevelStyle      =   0
       Bold            =   False
-      ButtonStyle     =   "0"
+      ButtonStyle     =   0
       Caption         =   "+"
-      CaptionAlignment=   "3"
+      CaptionAlignment=   3
       CaptionDelta    =   0
-      CaptionPosition =   "1"
+      CaptionPosition =   1
       Enabled         =   True
       FontName        =   "System"
       FontSize        =   0.0
@@ -216,7 +216,7 @@ Begin Window Window1
       HasBackgroundColor=   False
       Height          =   22
       Icon            =   0
-      IconAlignment   =   "0"
+      IconAlignment   =   0
       IconDeltaX      =   0
       IconDeltaY      =   0
       Index           =   -2147483648
@@ -228,7 +228,7 @@ Begin Window Window1
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      MenuStyle       =   "0"
+      MenuStyle       =   0
       Scope           =   0
       TabIndex        =   4
       TabPanelIndex   =   0
@@ -243,10 +243,11 @@ Begin Window Window1
       Width           =   30
    End
    Begin Timer Timer1
+      Enabled         =   True
       Index           =   -2147483648
       LockedInPosition=   False
       Period          =   600
-      RunMode         =   "2"
+      RunMode         =   2
       Scope           =   0
       TabPanelIndex   =   0
    End
@@ -254,13 +255,13 @@ Begin Window Window1
       AllowAutoDeactivate=   True
       AllowFocus      =   True
       BackgroundColor =   &c00000000
-      BevelStyle      =   "0"
+      BevelStyle      =   0
       Bold            =   False
-      ButtonStyle     =   "0"
+      ButtonStyle     =   0
       Caption         =   "🔄"
-      CaptionAlignment=   "3"
+      CaptionAlignment=   3
       CaptionDelta    =   0
-      CaptionPosition =   "1"
+      CaptionPosition =   1
       Enabled         =   True
       FontName        =   "System"
       FontSize        =   0.0
@@ -268,7 +269,7 @@ Begin Window Window1
       HasBackgroundColor=   False
       Height          =   22
       Icon            =   0
-      IconAlignment   =   "0"
+      IconAlignment   =   0
       IconDeltaX      =   0
       IconDeltaY      =   0
       Index           =   -2147483648
@@ -280,7 +281,7 @@ Begin Window Window1
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      MenuStyle       =   "0"
+      MenuStyle       =   0
       Scope           =   0
       TabIndex        =   5
       TabPanelIndex   =   0
@@ -301,7 +302,7 @@ Begin Window Window1
       FontName        =   "System"
       FontSize        =   0.0
       FontUnit        =   0
-      Height          =   400
+      Height          =   580
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -343,7 +344,7 @@ Begin Window Window1
          HasBorder       =   True
          HasHorizontalScrollbar=   False
          HasVerticalScrollbar=   True
-         Height          =   342
+         Height          =   522
          HideSelection   =   True
          Index           =   -2147483648
          InitialParent   =   "tabPorts"
@@ -363,13 +364,13 @@ Begin Window Window1
          TabIndex        =   0
          TabPanelIndex   =   1
          TabStop         =   True
-         TextAlignment   =   "0"
+         TextAlignment   =   0
          TextColor       =   &c00000000
          Tooltip         =   ""
          Top             =   58
          Transparent     =   False
          Underline       =   False
-         UnicodeMode     =   "1"
+         UnicodeMode     =   1
          ValidationMask  =   ""
          Value           =   ""
          Visible         =   True
@@ -393,7 +394,7 @@ Begin Window Window1
          HasBorder       =   True
          HasHorizontalScrollbar=   False
          HasVerticalScrollbar=   True
-         Height          =   342
+         Height          =   522
          HideSelection   =   True
          Index           =   -2147483648
          InitialParent   =   "tabPorts"
@@ -413,13 +414,13 @@ Begin Window Window1
          TabIndex        =   0
          TabPanelIndex   =   2
          TabStop         =   True
-         TextAlignment   =   "0"
+         TextAlignment   =   0
          TextColor       =   &c00000000
          Tooltip         =   ""
          Top             =   58
          Transparent     =   False
          Underline       =   False
-         UnicodeMode     =   "1"
+         UnicodeMode     =   1
          ValidationMask  =   ""
          Value           =   ""
          Visible         =   True
@@ -443,7 +444,7 @@ Begin Window Window1
          HasBorder       =   True
          HasHorizontalScrollbar=   False
          HasVerticalScrollbar=   True
-         Height          =   342
+         Height          =   522
          HideSelection   =   True
          Index           =   -2147483648
          InitialParent   =   "tabPorts"
@@ -463,13 +464,13 @@ Begin Window Window1
          TabIndex        =   0
          TabPanelIndex   =   3
          TabStop         =   True
-         TextAlignment   =   "0"
+         TextAlignment   =   0
          TextColor       =   &c00000000
          Tooltip         =   ""
          Top             =   58
          Transparent     =   False
          Underline       =   False
-         UnicodeMode     =   "1"
+         UnicodeMode     =   1
          ValidationMask  =   ""
          Value           =   ""
          Visible         =   True
@@ -496,7 +497,7 @@ Begin Window Window1
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      MacButtonStyle  =   "0"
+      MacButtonStyle  =   0
       Scope           =   0
       TabIndex        =   7
       TabPanelIndex   =   0
@@ -528,7 +529,7 @@ Begin Window Window1
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      MacButtonStyle  =   "0"
+      MacButtonStyle  =   0
       Scope           =   0
       TabIndex        =   8
       TabPanelIndex   =   0
@@ -554,13 +555,227 @@ Begin Window Window1
       Handle          =   0
       Index           =   -2147483648
       LockedInPosition=   False
-      Parity          =   "0"
+      Parity          =   0
       RequestToSend   =   False
       RingIndicator   =   False
       Scope           =   0
-      StopBit         =   "0"
+      StopBit         =   0
       TabPanelIndex   =   0
       XON             =   False
+   End
+   Begin GroupBox gbTools
+      AllowAutoDeactivate=   True
+      Bold            =   True
+      Caption         =   "Tools"
+      Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
+      Height          =   176
+      Index           =   -2147483648
+      InitialParent   =   ""
+      Italic          =   False
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Scope           =   0
+      TabIndex        =   9
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   424
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   False
+      Width           =   220
+      Begin BevelButton bbDebug
+         AllowAutoDeactivate=   True
+         AllowFocus      =   True
+         BackgroundColor =   &c00000000
+         BevelStyle      =   0
+         Bold            =   False
+         ButtonStyle     =   0
+         Caption         =   "debug"
+         CaptionAlignment=   3
+         CaptionDelta    =   0
+         CaptionPosition =   1
+         Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         HasBackgroundColor=   False
+         Height          =   22
+         Icon            =   0
+         IconAlignment   =   0
+         IconDeltaX      =   0
+         IconDeltaY      =   0
+         Index           =   -2147483648
+         InitialParent   =   "gbTools"
+         Italic          =   False
+         Left            =   29
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         MenuStyle       =   0
+         Scope           =   0
+         TabIndex        =   0
+         TabPanelIndex   =   0
+         TabStop         =   True
+         TextColor       =   &c00000000
+         Tooltip         =   ""
+         Top             =   449
+         Transparent     =   False
+         Underline       =   False
+         Value           =   False
+         Visible         =   True
+         Width           =   60
+      End
+      Begin BevelButton bbHelp
+         AllowAutoDeactivate=   True
+         AllowFocus      =   True
+         BackgroundColor =   &c00000000
+         BevelStyle      =   0
+         Bold            =   False
+         ButtonStyle     =   0
+         Caption         =   "help"
+         CaptionAlignment=   3
+         CaptionDelta    =   0
+         CaptionPosition =   1
+         Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         HasBackgroundColor=   False
+         Height          =   22
+         Icon            =   0
+         IconAlignment   =   0
+         IconDeltaX      =   0
+         IconDeltaY      =   0
+         Index           =   -2147483648
+         InitialParent   =   "gbTools"
+         Italic          =   False
+         Left            =   29
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         MenuStyle       =   0
+         Scope           =   0
+         TabIndex        =   1
+         TabPanelIndex   =   0
+         TabStop         =   True
+         TextColor       =   &c00000000
+         Tooltip         =   ""
+         Top             =   475
+         Transparent     =   False
+         Underline       =   False
+         Value           =   False
+         Visible         =   True
+         Width           =   60
+      End
+      Begin BevelButton bbPongBack
+         AllowAutoDeactivate=   True
+         AllowFocus      =   True
+         BackgroundColor =   &c00000000
+         BevelStyle      =   0
+         Bold            =   False
+         ButtonStyle     =   0
+         Caption         =   "pong"
+         CaptionAlignment=   3
+         CaptionDelta    =   0
+         CaptionPosition =   1
+         Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         HasBackgroundColor=   False
+         Height          =   22
+         Icon            =   0
+         IconAlignment   =   0
+         IconDeltaX      =   0
+         IconDeltaY      =   0
+         Index           =   -2147483648
+         InitialParent   =   "gbTools"
+         Italic          =   False
+         Left            =   29
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         MenuStyle       =   0
+         Scope           =   0
+         TabIndex        =   2
+         TabPanelIndex   =   0
+         TabStop         =   True
+         TextColor       =   &c00000000
+         Tooltip         =   ""
+         Top             =   501
+         Transparent     =   False
+         Underline       =   False
+         Value           =   False
+         Visible         =   True
+         Width           =   60
+      End
+      Begin BevelButton bbPingAll
+         AllowAutoDeactivate=   True
+         AllowFocus      =   True
+         BackgroundColor =   &c00000000
+         BevelStyle      =   0
+         Bold            =   False
+         ButtonStyle     =   0
+         Caption         =   "ping all"
+         CaptionAlignment=   3
+         CaptionDelta    =   0
+         CaptionPosition =   1
+         Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         HasBackgroundColor=   False
+         Height          =   22
+         Icon            =   0
+         IconAlignment   =   0
+         IconDeltaX      =   0
+         IconDeltaY      =   0
+         Index           =   -2147483648
+         InitialParent   =   "gbTools"
+         Italic          =   False
+         Left            =   29
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         MenuStyle       =   0
+         Scope           =   0
+         TabIndex        =   3
+         TabPanelIndex   =   0
+         TabStop         =   True
+         TextColor       =   &c00000000
+         Tooltip         =   ""
+         Top             =   527
+         Transparent     =   False
+         Underline       =   False
+         Value           =   False
+         Visible         =   True
+         Width           =   60
+      End
+   End
+   Begin Timer cmdSendTimer
+      Enabled         =   True
+      Index           =   -2147483648
+      LockedInPosition=   False
+      Period          =   500
+      RunMode         =   0
+      Scope           =   0
+      TabPanelIndex   =   0
    End
 End
 #tag EndWindow
@@ -582,7 +797,7 @@ End
 		  x.StopBit=SerialConnection.StopBits.One
 		  
 		  x.myTA=taTab0
-		  x.myTA.Text="Oh hai! 0"
+		  LogTa(x.myTA,"Oh hai! 0")
 		  tubes.Append x
 		  
 		  x=New src
@@ -592,7 +807,7 @@ End
 		  x.StopBit=SerialConnection.StopBits.One
 		  
 		  x.myTA=taTab1
-		  x.myTA.Text="Oh hai! 1"
+		  LogTa(x.myTA,"Oh hai! 1")
 		  tubes.Append x
 		  
 		  x=New src
@@ -602,13 +817,72 @@ End
 		  x.StopBit=SerialConnection.StopBits.One
 		  
 		  x.myTA=taTab2
-		  x.myTA.Text="Oh hai! 2"
+		  LogTa(x.myTA,"Oh hai! 2")
 		  tubes.Append x
 		  
 		  
 		End Sub
 	#tag EndEvent
 
+
+	#tag Method, Flags = &h0
+		Sub AddCommand(tube As Integer, cmd As String)
+		  tubesList.Append tube
+		  cmdsList.Append cmd
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub DebugOff(x As Integer)
+		  AddCommand(x, DEBUGOFF+EndOfLine.Windows)
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub DebugOn(x As Integer)
+		  AddCommand(x, DEBUGON+EndOfLine.Windows)
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub InitTA(ta As TextArea, txt As String)
+		  ta.Text=txt+EndOfLine
+		  
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub LogTA(ta As TextArea, txt As String)
+		  ta.Text=ta.Text+txt+EndOfLine
+		  
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub Ping(x As Integer)
+		  AddCommand(x, PING+EndOfLine.Windows)
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub PongOff(x As Integer)
+		  AddCommand(x, PONGOFF+EndOfLine.Windows)
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub PongOn(x As Integer)
+		  AddCommand(x, PONGON+EndOfLine.Windows)
+		  
+		End Sub
+	#tag EndMethod
 
 	#tag Method, Flags = &h0
 		Sub RefreshPorts()
@@ -649,6 +923,32 @@ End
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0
+		Sub SetFreq(x As Integer, fq As String)
+		  AddCommand(x, SETFQ+fq+EndOfLine.Windows)
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub ShowHelp(x As Integer)
+		  AddCommand(x, SHOWHELP+EndOfLine.Windows)
+		  
+		End Sub
+	#tag EndMethod
+
+
+	#tag Property, Flags = &h0
+		cmdsList() As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		debugOnOff As Integer = 0
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		pongBack As Integer = 0
+	#tag EndProperty
 
 	#tag Property, Flags = &h0
 		portsDict As Dictionary
@@ -657,6 +957,32 @@ End
 	#tag Property, Flags = &h0
 		tubes() As src
 	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		tubesList() As Integer
+	#tag EndProperty
+
+
+	#tag Constant, Name = DEBUGOFF, Type = String, Dynamic = False, Default = \"/D0", Scope = Public
+	#tag EndConstant
+
+	#tag Constant, Name = DEBUGON, Type = String, Dynamic = False, Default = \"/D1", Scope = Public
+	#tag EndConstant
+
+	#tag Constant, Name = PING, Type = String, Dynamic = False, Default = \"p", Scope = Public
+	#tag EndConstant
+
+	#tag Constant, Name = PONGOFF, Type = String, Dynamic = False, Default = \"r", Scope = Public
+	#tag EndConstant
+
+	#tag Constant, Name = PONGON, Type = String, Dynamic = False, Default = \"R", Scope = Public
+	#tag EndConstant
+
+	#tag Constant, Name = SETFQ, Type = String, Dynamic = False, Default = \"F", Scope = Public
+	#tag EndConstant
+
+	#tag Constant, Name = SHOWHELP, Type = String, Dynamic = False, Default = \"/H", Scope = Public
+	#tag EndConstant
 
 
 #tag EndWindowCode
@@ -743,9 +1069,9 @@ End
 		    Return
 		  End If
 		  
-		  taTab0.Text=""
-		  taTab1.Text=""
-		  taTab2.Text=""
+		  InitTA(taTab0, "")
+		  InitTA(taTab0, "")
+		  InitTA(taTab0, "")
 		  
 		  For x=0 To n-1
 		    tubes(x).Device = SerialDevice.At(portsDict.Value(lbLoRaPorts.CellValueAt(x,0)))
@@ -753,7 +1079,11 @@ End
 		    'tubes(x).myTA.Text = lbLoRaPorts.CellValueAt(x,0)
 		    Try
 		      tubes(x).Connect()
-		      tubes(x).Write "H"
+		      DebugOn(x)
+		      SetFreq(x, "868.125")
+		      PongOff(x)
+		      ShowHelp(x)
+		      DebugOff(x)
 		    Catch e As IOException
 		      Dim s, t(), u() As String
 		      Dim sh As New Shell
@@ -774,6 +1104,7 @@ End
 		      Return
 		    End Try
 		  Next
+		  cmdSendTimer.RunMode=timer.RunModes.Multiple
 		  
 		  me.Enabled=False
 		  pbClose.Enabled=True
@@ -788,6 +1119,7 @@ End
 		  bbRefreshPorts.Visible=False
 		  
 		  tabPorts.TabIndex=0
+		  gbTools.Visible=True
 		  
 		End Sub
 	#tag EndEvent
@@ -810,7 +1142,89 @@ End
 		    tubes(x).Close()
 		  Next
 		  
+		  gbTools.Visible=False
 		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events bbDebug
+	#tag Event
+		Sub Action()
+		  debugOnOff=1-debugOnOff
+		  
+		  If debugOnOff=1 Then
+		    AddCommand(tabPorts.SelectedPanelIndex, DEBUGON)
+		  Else
+		    AddCommand(tabPorts.SelectedPanelIndex, DEBUGOFF)
+		  End If
+		  cmdSendTimer.RunMode=timer.RunModes.Multiple
+		  
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events bbHelp
+	#tag Event
+		Sub Action()
+		  AddCommand(tabPorts.SelectedPanelIndex, SHOWHELP+EndOfLine.Windows)
+		  
+		  cmdSendTimer.RunMode=timer.RunModes.Multiple
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events bbPongBack
+	#tag Event
+		Sub Action()
+		  pongBack=1-pongBack
+		  
+		  If pongBack=1 Then
+		    AddCommand(tabPorts.SelectedPanelIndex, PONGON)
+		  Else
+		    AddCommand(tabPorts.SelectedPanelIndex, PONGOFF)
+		  End If
+		  cmdSendTimer.RunMode=timer.RunModes.Multiple
+		  
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events bbPingAll
+	#tag Event
+		Sub Action()
+		  Dim x, n As Integer
+		  
+		  n=lbLoRaPorts.RowCount
+		  If n=0 Then
+		    Return
+		  End If
+		  
+		  For x=0 To n-1
+		    Ping(x)
+		  Next
+		  cmdSendTimer.RunMode=timer.RunModes.Multiple
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events cmdSendTimer
+	#tag Event
+		Sub Action()
+		  Dim tube As Integer
+		  Dim cmd As String
+		  
+		  If tubesList.Ubound=-1 Then
+		    me.RunMode=timer.RunModes.Off
+		    Return
+		  End If
+		  
+		  tube = tubesList(0)
+		  tubesList.RemoveAt(0)
+		  cmd = cmdsList(0)
+		  cmdsList.RemoveAt(0)
+		  
+		  tubes(tube).Write(cmd)
+		  LogTA(tubes(tube).myTA, cmd.Trim())
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -1049,6 +1463,22 @@ End
 		Group="Deprecated"
 		InitialValue="True"
 		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="debugOnOff"
+		Visible=false
+		Group="Behavior"
+		InitialValue="0"
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="pongBack"
+		Visible=false
+		Group="Behavior"
+		InitialValue="0"
+		Type="Integer"
 		EditorType=""
 	#tag EndViewProperty
 #tag EndViewBehavior

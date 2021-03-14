@@ -8,11 +8,13 @@ Inherits SerialConnection
 		  s=DefineEncoding(me.ReadAll().Trim(), Encodings.UTF8)
 		  s=s.ReplaceAllBytes(EndOfLine.Windows, EndOfLine)
 		  
-		  Var j As New JSONItem(s)
-		  If j = Nil Then
-		    myTA.Text=myTA.Text+s+EndOfLine
+		  Var j As JSONItem
+		  Try
+		    j = New JSONItem(s)
+		  Catch e As JSONException
+		    Window1.LogTA(myTA, s)
 		    Return
-		  End If
+		  End Try
 		  
 		  Var cmd As String
 		  cmd = j.Lookup("cmd", "???")
@@ -26,11 +28,11 @@ Inherits SerialConnection
 		    from = j.Lookup("from", "???")
 		    freq = j.Lookup("freq", "???")
 		    rssi = j.Lookup("rssi", "???")
-		    myTA.Text=myTA.Text+"PING:"+EndOfLine
-		    myTA.Text=myTA.Text+" . UUID: "+UUID+EndOfLine
-		    myTA.Text=myTA.Text+" . from: "+from+EndOfLine
-		    myTA.Text=myTA.Text+" . freq: "+freq+EndOfLine
-		    myTA.Text=myTA.Text+" . RSSI: "+rssi+EndOfLine
+		    Window1.LogTA(myTA, "PING:"+EndOfLine)
+		    Window1.LogTA(myTA, " . UUID: "+UUID)
+		    Window1.LogTA(myTA, " . from: "+from)
+		    Window1.LogTA(myTA, " . freq: "+freq)
+		    Window1.LogTA(myTA, " . RSSI: "+rssi)
 		  End If
 		  
 		  
@@ -39,7 +41,7 @@ Inherits SerialConnection
 
 	#tag Event
 		Sub Error(e As RuntimeException)
-		  myTA.Text=myTA.Text+EndOfLine+EndOfLine+"**ERROR**"+EndOfLine+e.Message
+		  Window1.LogTA(myTA, EndOfLine+EndOfLine+"**ERROR**"+EndOfLine+e.Message)
 		  
 		End Sub
 	#tag EndEvent
