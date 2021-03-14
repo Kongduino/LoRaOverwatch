@@ -5,11 +5,34 @@ Inherits SerialConnection
 		Sub DataReceived()
 		  Dim s As String
 		  
-		  s=DefineEncoding(me.ReadAll(), Encodings.UTF8)
-		  
+		  s=DefineEncoding(me.ReadAll().Trim(), Encodings.UTF8)
 		  s=s.ReplaceAllBytes(EndOfLine.Windows, EndOfLine)
 		  
-		  myTA.Text=myTA.Text+s
+		  Var j As New JSONItem(s)
+		  If j = Nil Then
+		    myTA.Text=myTA.Text+s+EndOfLine
+		    Return
+		  End If
+		  
+		  Var cmd As String
+		  cmd = j.Lookup("cmd", "???")
+		  if(cmd="ping") Then
+		    Var UUID As String
+		    Var from As String
+		    Var freq As String
+		    Var rssi As String
+		    
+		    UUID = j.Lookup("UUID", "???")
+		    from = j.Lookup("from", "???")
+		    freq = j.Lookup("freq", "???")
+		    rssi = j.Lookup("rssi", "???")
+		    myTA.Text=myTA.Text+"PING:"+EndOfLine
+		    myTA.Text=myTA.Text+" . UUID: "+UUID+EndOfLine
+		    myTA.Text=myTA.Text+" . from: "+from+EndOfLine
+		    myTA.Text=myTA.Text+" . freq: "+freq+EndOfLine
+		    myTA.Text=myTA.Text+" . RSSI: "+rssi+EndOfLine
+		  End If
+		  
 		  
 		End Sub
 	#tag EndEvent
@@ -34,6 +57,108 @@ Inherits SerialConnection
 
 
 	#tag ViewBehavior
+		#tag ViewProperty
+			Name="Left"
+			Visible=true
+			Group="Position"
+			InitialValue="0"
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Top"
+			Visible=true
+			Group="Position"
+			InitialValue="0"
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="StopBit"
+			Visible=true
+			Group="Behavior"
+			InitialValue="0"
+			Type="StopBits"
+			EditorType="Enum"
+			#tag EnumValues
+				"-1 - None"
+				"0 - One"
+				"1 - OnePointFive"
+				"2 - Two"
+			#tag EndEnumValues
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="BytesAvailable"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="BytesLeftToSend"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="ClearToSend"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="DataCarrierDetect"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="DataSetReady"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="DataTerminalReady"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Handle"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="RequestToSend"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="RingIndicator"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Name"
 			Visible=true
@@ -103,25 +228,14 @@ Inherits SerialConnection
 			Visible=true
 			Group="Behavior"
 			InitialValue="0"
-			Type="Integer"
+			Type="Parities"
 			EditorType="Enum"
 			#tag EnumValues
-				"0 - No Parity"
-				"1 - Odd Parity"
-				"2 - EvenParity"
-			#tag EndEnumValues
-		#tag EndViewProperty
-		#tag ViewProperty
-			Name="Stop"
-			Visible=true
-			Group="Behavior"
-			InitialValue="0"
-			Type="Integer"
-			EditorType="Enum"
-			#tag EnumValues
-				"0 - 1 Stop Bit"
-				"1 - 1.5 Stop Bits"
-				"2 - 2 Stop Bits"
+				"0 - None"
+				"1 - Odd"
+				"2 - Even"
+				"3 - Space"
+				"4 - Mark"
 			#tag EndEnumValues
 		#tag EndViewProperty
 		#tag ViewProperty
