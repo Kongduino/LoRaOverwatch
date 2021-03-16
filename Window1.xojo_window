@@ -1093,7 +1093,9 @@ End
 
 	#tag Method, Flags = &h0
 		Sub AddLog(x As Integer, s As String)
-		  tos(x).WriteLine ("Channel "+Str(x)+": "+s)
+		  Dim d As New Date
+		  
+		  tos(x).WriteLine (d.SQLDateTime+":"+Chr(9)+s)
 		  
 		End Sub
 	#tag EndMethod
@@ -1123,8 +1125,9 @@ End
 	#tag Method, Flags = &h0
 		Sub LogTA(ta As TextArea, txt As String)
 		  ta.Text=ta.Text+txt+EndOfLine
-		  
-		  
+		  Dim i As Integer
+		  i=ta.Text.Length
+		  ta.VerticalScrollPosition=i+1
 		End Sub
 	#tag EndMethod
 
@@ -1405,9 +1408,15 @@ End
 		    If cr Then
 		      // Create a new file
 		      tx=tx.Create(f)
+		      tx.Delimiter=EndOfLine.UNIX
+		      tx.WriteLine("Channel: " + Str(x))
+		      tx.WriteLine("Port: " + myName)
+		      Dim d As New Date
+		      tx.WriteLine("Created: " + d.SQLDateTime)
 		    Else
 		      // Append to existing file
 		      tx=tx.Open(f)
+		      tx.Delimiter=EndOfLine.UNIX
 		    End If
 		    
 		    If tx=Nil Then
@@ -1416,7 +1425,6 @@ End
 		      pbClose.Press()
 		      Return
 		    End If
-		    tx.Delimiter=EndOfLine.UNIX
 		    tos.Append tx
 		    
 		    Try
