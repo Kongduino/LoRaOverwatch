@@ -552,6 +552,7 @@ Begin Window Window1
       DataSetReady    =   False
       DataTerminalReady=   False
       DTR             =   False
+      Enabled         =   True
       Handle          =   0
       Index           =   -2147483648
       LockedInPosition=   False
@@ -767,6 +768,261 @@ Begin Window Window1
          Visible         =   True
          Width           =   60
       End
+      Begin TextField tfParameter
+         AllowAutoDeactivate=   True
+         AllowFocusRing  =   True
+         AllowSpellChecking=   False
+         AllowTabs       =   False
+         BackgroundColor =   &cFFFFFF00
+         Bold            =   False
+         DataField       =   ""
+         DataSource      =   ""
+         Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         Format          =   ""
+         HasBorder       =   True
+         Height          =   22
+         Hint            =   ""
+         Index           =   -2147483648
+         InitialParent   =   "gbTools"
+         Italic          =   False
+         Left            =   29
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         MaximumCharactersAllowed=   0
+         Password        =   False
+         ReadOnly        =   False
+         Scope           =   0
+         TabIndex        =   4
+         TabPanelIndex   =   0
+         TabStop         =   True
+         Text            =   "868.125"
+         TextAlignment   =   0
+         TextColor       =   &c00000000
+         Tooltip         =   ""
+         Top             =   572
+         Transparent     =   False
+         Underline       =   False
+         ValidationMask  =   ""
+         Visible         =   True
+         Width           =   202
+      End
+      Begin Label Label3
+         AllowAutoDeactivate=   True
+         Bold            =   True
+         DataField       =   ""
+         DataSource      =   ""
+         Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         Height          =   20
+         Index           =   -2147483648
+         InitialParent   =   "gbTools"
+         Italic          =   False
+         Left            =   29
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         Multiline       =   False
+         Scope           =   0
+         Selectable      =   False
+         TabIndex        =   5
+         TabPanelIndex   =   0
+         TabStop         =   True
+         Text            =   "Parameter:"
+         TextAlignment   =   0
+         TextColor       =   &c00000000
+         Tooltip         =   ""
+         Top             =   552
+         Transparent     =   False
+         Underline       =   False
+         Visible         =   True
+         Width           =   80
+      End
+      Begin BevelButton bbSetSF
+         AllowAutoDeactivate=   True
+         AllowFocus      =   True
+         BackgroundColor =   &c00000000
+         BevelStyle      =   0
+         Bold            =   False
+         ButtonStyle     =   0
+         Caption         =   "SF"
+         CaptionAlignment=   3
+         CaptionDelta    =   0
+         CaptionPosition =   1
+         Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         HasBackgroundColor=   False
+         Height          =   22
+         Icon            =   0
+         IconAlignment   =   0
+         IconDeltaX      =   0
+         IconDeltaY      =   0
+         Index           =   -2147483648
+         InitialParent   =   "gbTools"
+         Italic          =   False
+         Left            =   101
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         MenuStyle       =   0
+         Scope           =   0
+         TabIndex        =   6
+         TabPanelIndex   =   0
+         TabStop         =   True
+         TextColor       =   &c00000000
+         Tooltip         =   ""
+         Top             =   449
+         Transparent     =   False
+         Underline       =   False
+         Value           =   False
+         Visible         =   True
+         Width           =   60
+      End
+      Begin BevelButton bbSetFQ
+         AllowAutoDeactivate=   True
+         AllowFocus      =   True
+         BackgroundColor =   &c00000000
+         BevelStyle      =   0
+         Bold            =   False
+         ButtonStyle     =   0
+         Caption         =   "FQ"
+         CaptionAlignment=   3
+         CaptionDelta    =   0
+         CaptionPosition =   1
+         Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         HasBackgroundColor=   False
+         Height          =   22
+         Icon            =   0
+         IconAlignment   =   0
+         IconDeltaX      =   0
+         IconDeltaY      =   0
+         Index           =   -2147483648
+         InitialParent   =   "gbTools"
+         Italic          =   False
+         Left            =   101
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         MenuStyle       =   0
+         Scope           =   0
+         TabIndex        =   7
+         TabPanelIndex   =   0
+         TabStop         =   True
+         TextColor       =   &c00000000
+         Tooltip         =   ""
+         Top             =   475
+         Transparent     =   False
+         Underline       =   False
+         Value           =   False
+         Visible         =   True
+         Width           =   60
+      End
+      Begin BevelButton bbSetBW
+         AllowAutoDeactivate=   True
+         AllowFocus      =   True
+         BackgroundColor =   &c00000000
+         BevelStyle      =   0
+         Bold            =   False
+         ButtonStyle     =   0
+         Caption         =   "BW"
+         CaptionAlignment=   3
+         CaptionDelta    =   0
+         CaptionPosition =   1
+         Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         HasBackgroundColor=   False
+         Height          =   22
+         Icon            =   0
+         IconAlignment   =   0
+         IconDeltaX      =   0
+         IconDeltaY      =   0
+         Index           =   -2147483648
+         InitialParent   =   "gbTools"
+         Italic          =   False
+         Left            =   101
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         MenuStyle       =   0
+         Scope           =   0
+         TabIndex        =   8
+         TabPanelIndex   =   0
+         TabStop         =   True
+         TextColor       =   &c00000000
+         Tooltip         =   ""
+         Top             =   501
+         Transparent     =   False
+         Underline       =   False
+         Value           =   False
+         Visible         =   True
+         Width           =   60
+      End
+      Begin BevelButton bbSendMsg
+         AllowAutoDeactivate=   True
+         AllowFocus      =   True
+         BackgroundColor =   &c00000000
+         BevelStyle      =   0
+         Bold            =   False
+         ButtonStyle     =   0
+         Caption         =   "msg"
+         CaptionAlignment=   3
+         CaptionDelta    =   0
+         CaptionPosition =   1
+         Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         HasBackgroundColor=   False
+         Height          =   22
+         Icon            =   0
+         IconAlignment   =   0
+         IconDeltaX      =   0
+         IconDeltaY      =   0
+         Index           =   -2147483648
+         InitialParent   =   "gbTools"
+         Italic          =   False
+         Left            =   101
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         MenuStyle       =   0
+         Scope           =   0
+         TabIndex        =   9
+         TabPanelIndex   =   0
+         TabStop         =   True
+         TextColor       =   &c00000000
+         Tooltip         =   ""
+         Top             =   527
+         Transparent     =   False
+         Underline       =   False
+         Value           =   False
+         Visible         =   True
+         Width           =   60
+      End
    End
    Begin Timer cmdSendTimer
       Enabled         =   True
@@ -797,6 +1053,7 @@ End
 		  x.StopBit=SerialConnection.StopBits.One
 		  
 		  x.myTA=taTab0
+		  x.myIX=0
 		  LogTa(x.myTA,"Oh hai! 0")
 		  tubes.Append x
 		  
@@ -807,6 +1064,7 @@ End
 		  x.StopBit=SerialConnection.StopBits.One
 		  
 		  x.myTA=taTab1
+		  x.myIX=1
 		  LogTa(x.myTA,"Oh hai! 1")
 		  tubes.Append x
 		  
@@ -817,6 +1075,7 @@ End
 		  x.StopBit=SerialConnection.StopBits.One
 		  
 		  x.myTA=taTab2
+		  x.myIX=2
 		  LogTa(x.myTA,"Oh hai! 2")
 		  tubes.Append x
 		  
@@ -829,6 +1088,15 @@ End
 		Sub AddCommand(tube As Integer, cmd As String)
 		  tubesList.Append tube
 		  cmdsList.Append cmd
+		  
+		  AddLog(tube, "Send command `"+cmd.Trim()+"`")
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub AddLog(x As Integer, s As String)
+		  tos(x).WriteLine ("Channel "+Str(x)+": "+s)
 		  
 		End Sub
 	#tag EndMethod
@@ -955,6 +1223,10 @@ End
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
+		tos() As TextOutputStream
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		tubes() As src
 	#tag EndProperty
 
@@ -978,7 +1250,16 @@ End
 	#tag Constant, Name = PONGON, Type = String, Dynamic = False, Default = \"R", Scope = Public
 	#tag EndConstant
 
+	#tag Constant, Name = SENDMSG, Type = String, Dynamic = False, Default = \">", Scope = Public
+	#tag EndConstant
+
+	#tag Constant, Name = SETBW, Type = String, Dynamic = False, Default = \"B", Scope = Public
+	#tag EndConstant
+
 	#tag Constant, Name = SETFQ, Type = String, Dynamic = False, Default = \"F", Scope = Public
+	#tag EndConstant
+
+	#tag Constant, Name = SETSF, Type = String, Dynamic = False, Default = \"S", Scope = Public
 	#tag EndConstant
 
 	#tag Constant, Name = SHOWHELP, Type = String, Dynamic = False, Default = \"/H", Scope = Public
@@ -1072,21 +1353,83 @@ End
 		  InitTA(taTab0, "")
 		  InitTA(taTab0, "")
 		  InitTA(taTab0, "")
+		  Redim tos(-1)
 		  
 		  For x=0 To n-1
 		    tubes(x).Device = SerialDevice.At(portsDict.Value(lbLoRaPorts.CellValueAt(x,0)))
-		    'MessageBox Str(x)+": "+lbLoRaPorts.CellValueAt(x,0)+EndOfLine+EndOfLine+tubes(x).myTA.Name
-		    'tubes(x).myTA.Text = lbLoRaPorts.CellValueAt(x,0)
+		    // First Create a Log File for each channel
+		    Dim myName As String
+		    myName=lbLoRaPorts.CellValueAt(x,0)
+		    Dim f As FolderItem
+		    f=New FolderItem("")
+		    Dim sh As  New Shell
+		    Dim cr As Boolean
+		    sh.Execute "cd "+f.ShellPath+" ; touch "+myName+"_000.log"
+		    sh.Execute "cd "+f.ShellPath+" ; touch "+myName+"_001.log"
+		    sh.Execute "cd "+f.ShellPath+" ; touch "+myName+"_002.log"
+		    
+		    Dim s, t(), u() As String
+		    s="cd "+f.ShellPath+" ; ls "+myName+"_*.log|sort -r"
+		    sh.Execute s
+		    s=sh.Result.Trim()
+		    t=s.SplitBytes(EndOfLine.UNIX)
+		    If t(0).Left(myName.Length)=myName Then
+		      // we have an existing log file
+		      Var d As New MessageDialog
+		      Var b As MessageDialogButton
+		      d.Icon = MessageDialog.GraphicCaution
+		      d.ActionButton.Caption = "Use Existing"
+		      d.CancelButton.Visible = False
+		      d.AlternateActionButton.Visible = True
+		      d.AlternateActionButton.Caption = "Create New"
+		      d.Message = "Do you want to use the existing latest log file, `"+t(0)+"`?"
+		      d.Explanation = "If you do, logs will be added to it. If not, a new one will be created"
+		      b = d.ShowModal
+		      Select Case b
+		      Case d.ActionButton
+		        s=t(0)
+		        cr = False
+		        // CReate new
+		      Case d.AlternateActionButton
+		        u=t(0).SplitBytes("_")
+		        u(1)="00"+Str(u(1).Val()+1)
+		        s=u(0)+"_"+u(1).RightBytes(3)+".log"
+		        cr = True
+		        // CReate new
+		      End Select
+		    Else
+		      s=myName+"_000.log"
+		      cr = True
+		      // CReate new
+		    End If
+		    // s contains the file name
+		    f=New FolderItem(s)
+		    Dim tx As  TextOutputStream
+		    If cr Then
+		      // Create a new file
+		      tx=tx.Create(f)
+		    Else
+		      // Append to existing file
+		      tx=tx.Open(f)
+		    End If
+		    
+		    If tx=Nil Then
+		      MessageBox "Alert!"+EndOfLine+EndOfLine+"Couldn't create tx #"+Str(x)
+		      pbClose.Enabled=True
+		      pbClose.Press()
+		      Return
+		    End If
+		    tx.Delimiter=EndOfLine.UNIX
+		    tos.Append tx
+		    
 		    Try
 		      tubes(x).Connect()
 		      DebugOn(x)
 		      SetFreq(x, "868.125")
-		      PongOff(x)
+		      PongOn(x)
 		      ShowHelp(x)
 		      DebugOff(x)
 		    Catch e As IOException
-		      Dim s, t(), u() As String
-		      Dim sh As New Shell
 		      Dim i, j As Integer
 		      sh.Execute "/bin/ps ax|grep -i term|grep -v grep"
 		      s=sh.Result.Trim()
@@ -1143,6 +1486,8 @@ End
 		  Next
 		  
 		  gbTools.Visible=False
+		  
+		  Redim tos(-1)
 		  
 		End Sub
 	#tag EndEvent
@@ -1202,6 +1547,84 @@ End
 		  For x=0 To n-1
 		    Ping(x)
 		  Next
+		  cmdSendTimer.RunMode=timer.RunModes.Multiple
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events bbSetSF
+	#tag Event
+		Sub Action()
+		  Dim s As String
+		  Dim FQ As Double
+		  
+		  s=tfParameter.Text
+		  FQ=s.Val()
+		  If (FQ<120.0) Or (FQ>999.0) Then
+		    MessageBox "Error!"+EndOfLine+EndOfLine+"Parameter is incorrect!"
+		    Return
+		  End If
+		  
+		  AddCommand(tabPorts.SelectedPanelIndex, SETFQ+s+EndOfLine.Windows)
+		  
+		  cmdSendTimer.RunMode=timer.RunModes.Multiple
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events bbSetFQ
+	#tag Event
+		Sub Action()
+		  Dim s As String
+		  Dim SF As UInt8
+		  
+		  s=tfParameter.Text
+		  SF=s.Val()
+		  If (SF<7) Or (SF>12) Then
+		    MessageBox "Error!"+EndOfLine+EndOfLine+"Parameter is incorrect!"
+		    Return
+		  End If
+		  
+		  AddCommand(tabPorts.SelectedPanelIndex, SETSF+s+EndOfLine.Windows)
+		  
+		  cmdSendTimer.RunMode=timer.RunModes.Multiple
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events bbSetBW
+	#tag Event
+		Sub Action()
+		  Dim s As String
+		  Dim BW As UInt8
+		  
+		  s=tfParameter.Text
+		  BW=s.Val()
+		  If (BW<0) Or (BW>9) Then
+		    MessageBox "Error!"+EndOfLine+EndOfLine+"Parameter is incorrect!"
+		    Return
+		  End If
+		  
+		  AddCommand(tabPorts.SelectedPanelIndex, SETBW+s+EndOfLine.Windows)
+		  
+		  cmdSendTimer.RunMode=timer.RunModes.Multiple
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events bbSendMsg
+	#tag Event
+		Sub Action()
+		  Dim s As String
+		  
+		  s=tfParameter.Text.Trim()
+		  If s="" Then
+		    MessageBox "Error!"+EndOfLine+EndOfLine+"Parameter is incorrect!"
+		    Return
+		  End If
+		  
+		  AddCommand(tabPorts.SelectedPanelIndex, SENDMSG+s+EndOfLine.Windows)
+		  
 		  cmdSendTimer.RunMode=timer.RunModes.Multiple
 		  
 		End Sub

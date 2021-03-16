@@ -18,7 +18,7 @@ Inherits SerialConnection
 		  
 		  Var cmd As String
 		  cmd = j.Lookup("cmd", "???")
-		  if(cmd="ping") Then
+		  If (cmd="ping") Then
 		    Var UUID As String
 		    Var from As String
 		    Var freq As String
@@ -28,14 +28,20 @@ Inherits SerialConnection
 		    from = j.Lookup("from", "???")
 		    freq = j.Lookup("freq", "???")
 		    rssi = j.Lookup("rssi", "???")
-		    Window1.LogTA(myTA, "PING:"+EndOfLine)
+		    Window1.LogTA(myTA, "PING:")
 		    Window1.LogTA(myTA, " . UUID: "+UUID)
 		    Window1.LogTA(myTA, " . from: "+from)
 		    Window1.LogTA(myTA, " . freq: "+freq)
 		    Window1.LogTA(myTA, " . RSSI: "+rssi)
+		    Window1.AddLog(myIX, "PING:")
+		    Window1.AddLog(myIX, " . UUID: "+UUID)
+		    Window1.AddLog(myIX, " . from: "+from)
+		    Window1.AddLog(myIX, " . freq: "+freq)
+		    Window1.AddLog(myIX, " . RSSI: "+rssi)
+		    Return
 		  End If
 		  
-		  
+		  Window1.AddLog(myIX, s)
 		End Sub
 	#tag EndEvent
 
@@ -52,6 +58,10 @@ Inherits SerialConnection
 		End Sub
 	#tag EndEvent
 
+
+	#tag Property, Flags = &h0
+		myIX As Integer
+	#tag EndProperty
 
 	#tag Property, Flags = &h0
 		myTA As TextArea
@@ -262,6 +272,14 @@ Inherits SerialConnection
 			Group="Behavior"
 			InitialValue="False"
 			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="myIX"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
 			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior
